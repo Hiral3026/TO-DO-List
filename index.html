@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="C:\Users\hiral\OneDrive\Documents\Projects\TO-DO LIST\user-avatar.jpg" alt="User Avatar" class="avatar">
+                <p class="user-name">Welcome Hiral</p>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" data-list="my-day">My Day</a></li>
+                    <li class="active"><a href="#" data-list="important">Important</a></li>
+                    <li><a href="#" data-list="planned">Planned</a></li>
+                    <li><a href="#" data-list="assigned-to-me">Assigned to me</a></li>
+                    <li><a href="#" data-list="tasks">Tasks</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1 id="list-title">Important</h1>
+            <div id="my-day" class="task-list-container"></div>
+            <div id="important" class="task-list-container active">
+                <div class="task">
+                    <span>Fiji Island</span>
+                    <button class="delete-btn">×</button>
+                </div>
+                <div class="task">
+                    <span>Maldives</span>
+                    <button class="delete-btn">×</button>
+                </div>
+                <div class="task">
+                    <span>Northern Lights</span>
+                    <button class="delete-btn">×</button>
+                </div>
+            </div>
+            <div id="planned" class="task-list-container"></div>
+            <div id="assigned-to-me" class="task-list-container"></div>
+            <div id="tasks" class="task-list-container"></div>
+            <div class="add-task">
+                <input type="text" id="new-task-input" placeholder="Add a task">
+                <button id="add-task-btn">+</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
